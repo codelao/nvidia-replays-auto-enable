@@ -1,10 +1,10 @@
-#define MyAppName "nvidia replays auto toggle"
+#define MyAppName "nvidia replays auto-enable"
 #define MyAppVersion "1.0.0"
 #define MyAppPublisher "CodeLao"
-#define MyAppExeName "nvidia replays auto toggle.exe"
+#define MyAppExeName "nvidia replays auto-enable.exe"
 
 [Setup]
-AppId={{9E06367C-81A5-402F-9464-5FC179111A66}
+AppId={{6623B84F-6630-48EC-94EE-81503759B4A6}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 AppPublisher={#MyAppPublisher}
@@ -15,7 +15,7 @@ ArchitecturesInstallIn64BitMode=x64compatible
 DefaultGroupName={#MyAppName}
 DisableProgramGroupPage=yes
 PrivilegesRequiredOverridesAllowed=dialog
-OutputBaseFilename=install_nvidia_replays_auto_toggle_x64
+OutputBaseFilename=install_nvidia_replays_auto-enable_x64
 SolidCompression=yes
 WizardStyle=modern
 DisableWelcomePage=no
