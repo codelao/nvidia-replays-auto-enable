@@ -1,5 +1,5 @@
 #define MyAppName "nvidia replays auto-enable"
-#define MyAppVersion "1.0.2-beta"
+#define MyAppVersion "1.0.3-beta"
 #define MyAppPublisher "CodeLao"
 #define MyAppExeName "nvidia replays auto-enable.exe"
 

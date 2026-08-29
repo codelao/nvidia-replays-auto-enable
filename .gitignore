@@ -7,3 +7,6 @@
 
 **/Output/
 **/*.exe
+
+**/*.ico
+/tool/*.txt
