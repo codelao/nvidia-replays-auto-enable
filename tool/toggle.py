@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
 """
-> Nvidia replays auto toggle
+> Nvidia Replays Auto-Enable
 > By CodeLao
 > Licensed under MIT
 
-https://github.com/codelao/nvidia-replays-auto-toggle
+https://github.com/codelao/nvidia-replays-auto-enable
 """
 
 import os, sys, cv2, time, csv
@@ -50,10 +50,12 @@ try:
 	overlayType = 1
 	# make sure overlay is opened
 	try:
-		g.locateOnScreen("overlay marker.png", confidence=0.8)
+		ovrl = os.path.join(__path__, "overlay marker.png")
+		g.locateOnScreen(ovrl, confidence=0.8)
 	except g.ImageNotFoundException:
 		try:
-			g.locateOnScreen("shrinked overlay marker.png", confidence=0.8)
+			sovrl = os.path.join(__path__, "shrinked overlay marker.png")
+			g.locateOnScreen(sovrl, confidence=0.5)
 			overlayType = 2
 		except g.ImageNotFoundException:
 			raise SystemError("NVIDIA App is either not installed or not running yet. Also, make sure that your overlay's hotkey is set to Alt+Z, otherwise, you will not be able to use this tool.")
@@ -66,9 +68,9 @@ try:
 	time.sleep(1)
 
 	# locate toggle switch
-	x, y = (486,98) if overlayType==1 else (360,72)
+	x, y = (483,98) if overlayType==1 else (357,72)
 	if not g.pixelMatchesColor(x,y,(118,185,0),tolerance=20):
-		g.moveTo(x,y,2)
+		g.moveTo(x,y)
 		g.click()
 
 	# close overlay
