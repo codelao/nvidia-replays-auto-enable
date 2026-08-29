@@ -1,3 +1,9 @@
+# 1.0.3-beta
+*8/28/2026*
+
+- Bug fixes
+- Minor code improvements
+
 # 1.0.2-beta
 *3/7/2026*
 
